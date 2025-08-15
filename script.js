@@ -24,7 +24,11 @@ function filterType(type) {
     });
     const button = document.getElementById(type);
     button.classList.toggle("active");
-    typeFilter = type;
+    if (button.classList.contains("active")) {
+        typeFilter = type;
+    } else {
+        typeFilter = "";
+    }
     refreshTable();
 }
 
@@ -37,7 +41,11 @@ function filterDifficulty(difficulty) {
     });
     const button = document.getElementById(difficulty);
     button.classList.toggle("active");
-    difficultyFilter = difficulty;
+    if (button.classList.contains("active")) {
+        difficultyFilter = difficulty;
+    } else {
+        difficultyFilter = "";
+    }
     refreshTable();
 }
 
