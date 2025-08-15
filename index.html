@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>English Learning Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="row">
+        <h1 chinese="英文学习资源" english="English Learning Tools"></h1>
+        <button id="switchLang" type="button" onclick="switchLanguage()" english="用中文字" chinese="Switch to English"></button>
+    </div>
+    <div class="box">
+        <b chinese="筛选" english="Filters"></b>
+        <div class="row">
+            <p chinese="种类: " english="Type: "></p>
+            <button class="filterButton type" id="conversation" type="button" onclick="filterType('conversation')" chinese="对话" english="Conversation"></button>
+            <button class="filterButton type" id="story" type="button" onclick="filterType('story')" chinese="故事" english="Story"></button>
+            <button class="filterButton type" id="video" type="button" onclick="filterType('video')" chinese="视频" english="Video"></button>
+        </div>
+        <div class="row">
+            <p chinese="难度: " english="Difficulty: "></p>
+            <button class="filterButton difficulty" id="beginner" type="button" onclick="filterDifficulty('beginner')" chinese="新手" english="Beginner"></button>
+            <button class="filterButton difficulty" id="intermediate" type="button" onclick="filterDifficulty('intermediate')" chinese="中级" english="Intermediate"></button>
+            <button class="filterButton difficulty" id="advanced" type="button" onclick="filterDifficulty('advanced')" chinese="高阶" english="Advanced"></button>
+        </div>
+    </div>
+    <table id="resourceTable">
+        <tr class="header">
+            <th style="width:40%;" chinese="标题" english="Name">a</th>
+            <th style="width:20%;" chinese="种类" english="Type"></th>
+            <th style="width:20%;" chinese="难度" english="Difficulty"></th>
+            <th style="width:20%;" chinese="连接" english="Link"></th>
+        </tr>
+        <tr type="conversation" difficulty="beginner">
+            <td chinese="实用对话" english="Practical Dialogues"></td>
+            <td class="type" chinese="对话" english="Conversation"></td>
+            <td class="difficulty" chinese="中级" english="Intermediate"></td>
+            <td><a href="https://agendaweb.org/listening/practical-english-conversations.html" target="_blank" chinese="点这里" english="Click here"></a></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
