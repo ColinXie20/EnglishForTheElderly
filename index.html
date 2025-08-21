@@ -11,14 +11,16 @@
         <h1 chinese="英文学习资源" english="English Learning Tools"></h1>
         <button id="switchLang" type="button" onclick="switchLanguage()" english="用中文字" chinese="Switch to English"></button>
     </div>
+    <a href="https://www.youtube.com/watch?v=TR0JZiapxXM" target="_blank"><b>FAQ (for volunteers)</b></a><br>
     <b chinese="英文到中文翻译: " english="English to Chinese Translator: "></b><a href="https://quillbot.com/translate?sl=en-US&tl=zh" target="_blank" chinese="点这里" english="Click here"></a>
     <div class="box">
         <b chinese="筛选" english="Filters"></b>
         <div class="row">
             <p chinese="种类: " english="Type: "></p>
             <button class="filterButton type" id="conversation" type="button" onclick="filterType('conversation')" chinese="对话" english="Conversation"></button>
-            <button class="filterButton type" id="story" type="button" onclick="filterType('story')" chinese="故事" english="Story"></button>
+            <button class="filterButton type" id="game" type="button" onclick="filterType('game')" chinese="游戏" english="Game"></button>
             <button class="filterButton type" id="video" type="button" onclick="filterType('video')" chinese="视频" english="Video"></button>
+            <button class="filterButton type" id="story" type="button" onclick="filterType('story')" chinese="故事" english="Story"></button>
         </div>
         <div class="row">
             <p chinese="难度: " english="Difficulty: "></p>
@@ -35,34 +37,34 @@
             <th style="width:20%;" chinese="连接" english="Link"></th>
         </tr>
         <tr>
-            <td chinese="日常对话" english="Everyday Dialogues"></td>
-            <td class="type" chinese="对话" english="Conversation"></td>
-            <td class="difficulty" chinese="中级" english="Intermediate"></td>
-            <td><a href="https://americanenglish.state.gov/files/ae/resource_files/b_dialogues_everyday_conversations_english_lo_0.pdf" target="_blank" chinese="点这里" english="Click here"></a></td>
-        </tr>
-        <tr>
             <td chinese="实用对话" english="Practical Dialogues"></td>
             <td class="type" chinese="对话" english="Conversation"></td>
             <td class="difficulty" chinese="中级" english="Intermediate"></td>
             <td><a href="https://agendaweb.org/listening/practical-english-conversations.html" target="_blank" chinese="点这里" english="Click here"></a></td>
         </tr>
         <tr>
+            <td chinese="日常对话" english="Everyday Dialogues"></td>
+            <td class="type" chinese="对话" english="Conversation"></td>
+            <td class="difficulty" chinese="中级" english="Intermediate"></td>
+            <td><a href="https://americanenglish.state.gov/files/ae/resource_files/b_dialogues_everyday_conversations_english_lo_0.pdf" target="_blank" chinese="点这里" english="Click here"></a></td>
+        </tr>
+        <tr>
+            <td chinese="常用短语" english="Common Expressions"></td>
+            <td class="type" chinese="对话" english="Conversation"></td>
+            <td class="difficulty" chinese="中级" english="Intermediate"></td>
+            <td><a href="https://www.yaenglish.com/%e8%8b%b1%e8%af%ad%e6%97%a5%e5%b8%b8%e7%94%a8%e8%af%ad900%e5%8f%a5%ef%bc%88%e4%b8%89%ef%bc%89/" target="_blank" chinese="点这里" english="Click here"></a></td>
+        </tr>
+        <tr>
+            <td chinese="发音练习" english="Pronunciation Practice"></td>
+            <td class="type" chinese="游戏" english="Game"></td>
+            <td class="difficulty" chinese="新手" english="Beginner"></td>
+            <td><a href="https://www.englishclub.com/esl-games/pronunciation/" target="_blank" chinese="点这里" english="Click here"></a></td>
+        </tr>
+        <tr>
             <td chinese="绕口令" english="Tongue Twisters"></td>
-            <td class="type" chinese="故事" english="Story"></td>
+            <td class="type" chinese="游戏" english="Game"></td>
             <td class="difficulty" chinese="新手" english="Beginner"></td>
             <td><a href="https://www.engvid.com/english-resource/50-tongue-twisters-improve-pronunciation/" target="_blank" chinese="点这里" english="Click here"></a></td>
-        </tr>
-        <tr>
-            <td chinese="短故事1" english="Short Stories 1"></td>
-            <td class="type" chinese="故事" english="Story"></td>
-            <td class="difficulty" chinese="中级" english="Intermediate"></td>
-            <td><a href="https://lingoway.org/blog/wp-content/uploads/2023/08/100-English-Short-Stories.pdf" target="_blank" chinese="点这里" english="Click here"></a></td>
-        </tr>
-        <tr>
-            <td chinese="短故事2" english="Short Stories 2"></td>
-            <td class="type" chinese="故事" english="Story"></td>
-            <td class="difficulty" chinese="高级" english="Advanced"></td>
-            <td><a href="https://easystoriesinenglish.com/category/beginner/" target="_blank" chinese="点这里" english="Click here"></a></td>
         </tr>
         <tr>
             <td chinese="最常用的词" english="Most Common Phrases"></td>
@@ -93,6 +95,24 @@
             <td class="type" chinese="视频" english="Video"></td>
             <td class="difficulty" chinese="高级" english="Advanced"></td>
             <td><a href="https://www.youtube.com/watch?v=TR0JZiapxXM" target="_blank" chinese="点这里" english="Click here"></a></td>
+        </tr>
+        <tr>
+            <td chinese="短故事1" english="Short Stories 1"></td>
+            <td class="type" chinese="故事" english="Story"></td>
+            <td class="difficulty" chinese="中级" english="Intermediate"></td>
+            <td><a href="https://lingoway.org/blog/wp-content/uploads/2023/08/100-English-Short-Stories.pdf" target="_blank" chinese="点这里" english="Click here"></a></td>
+        </tr>
+        <tr>
+            <td chinese="短故事2" english="Short Stories 2"></td>
+            <td class="type" chinese="故事" english="Story"></td>
+            <td class="difficulty" chinese="高级" english="Advanced"></td>
+            <td><a href="https://easystoriesinenglish.com/category/beginner/" target="_blank" chinese="点这里" english="Click here"></a></td>
+        </tr>
+        <tr>
+            <td chinese="美国的节日" english="Holidays in America"></td>
+            <td class="type" chinese="故事" english="Story"></td>
+            <td class="difficulty" chinese="高级" english="Advanced"></td>
+            <td><a href="https://americanenglish.state.gov/search/solr/?f%5B0%5D=bundle%3Aresource&f%5B1%5D=im_field_resource_audience%3A8&f%5B2%5D=im_field_resource_categories%3A2" target="_blank" chinese="点这里" english="Click here"></a></td>
         </tr>
     </table>
     <script src="script.js"></script>
